@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SVG Loader with GSAP | Goo Loader</title>
-	<meta name="description" content="Some loaders made with SVG and GSAP" />
-	<meta name="keywords" content="svg, animation, GSAP, loader, inspiration, web design" />
-	<meta name="author" content="Codrops" />
+	<meta name="description" content="Some loaders made with SVG and GSAP">
+	<meta name="keywords" content="svg, animation, GSAP, loader, inspiration, web design">
+	<meta name="author" content="Codrops">
 	<link rel="shortcut icon" href="../favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
 	<script type="text/javascript" src="js/greensock/minified/TweenMax.min.js"></script>
 	<!--[if IE]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,25 +38,25 @@
 				<svg width="400" height="200" viewBox="0 0 400 200">
 					<defs>
 						<filter id="goo">
-							<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
-							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 17 -7" result="cm" />
+							<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 17 -7" result="cm"/>
 							<feComposite in="SourceGraphic" in2="cm">
-						</filter>
+						</feComposite></filter>
 						<filter id="f2" x="-200%" y="-40%" width="400%" height="200%">
-							<feOffset in="SourceAlpha" dx="9" dy="3" />
-							<feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.51" />
+							<feOffset in="SourceAlpha" dx="9" dy="3"/>
+							<feGaussianBlur result="blurOut" in="offOut" stdDeviation="0.51"/>
 							<feComponentTransfer>
-								<feFuncA type="linear" slope="0.05" />
+								<feFuncA type="linear" slope="0.05"/>
 							</feComponentTransfer>
 							<feMerge>
 								<feMergeNode/>
-								<feMergeNode in="SourceGraphic" />
+								<feMergeNode in="SourceGraphic"/>
 							</feMerge>
 						</filter>
 					</defs>
 					<g filter="url(#goo)" style="fill:#FFFFFF">
 						<ellipse id="drop" cx="125" cy="90" rx="20" ry="20" fill-opacity="1" fill="#ededed"/>
-						<ellipse id="drop2"cx="125" cy="90" rx="20" ry="20" fill-opacity="1" fill="#ededed"/>
+						<ellipse id="drop2" cx="125" cy="90" rx="20" ry="20" fill-opacity="1" fill="#ededed"/>
 					</g>
 				</svg>
 			</div>
@@ -133,5 +131,18 @@
 		}, '-=4')
 	})()
 	</script>
-</body>
-</html>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
-<head>
+<!DOCTYPE html><!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]--><!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]--><!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]--><!--[if gt IE 8]><!--><html lang="en"><!--<![endif]--><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Modal Box Contact Form</title>
@@ -14,13 +9,13 @@
   <form action="index.html" class="contact">
     <fieldset class="contact-inner">
       <p class="contact-input">
-        <input type="text" name="name" placeholder="Your Name…" autofocus>
+        <input type="text" name="name" placeholder="Your Name&#x2026;" autofocus>
       </p>
 
       <p class="contact-input">
         <label for="select" class="select">
           <select name="subject" id="select">
-            <option value="" selected>Choose Subject…</option>
+            <option value="" selected>Choose Subject&#x2026;</option>
             <option value="1">I have a suggestion</option>
             <option value="1">I found a bug</option>
             <option value="1">Other</option>
@@ -29,7 +24,7 @@
       </p>
 
       <p class="contact-input">
-        <textarea name="message" placeholder="Your Message…"></textarea>
+        <textarea name="message" placeholder="Your Message&#x2026;"></textarea>
       </p>
 
       <p class="contact-submit">
@@ -44,10 +39,24 @@
       <a href="http://www.cssflow.com/snippets/modal-box-contact-form.zip" target="_parent">Download</a>
     </p>
     <p class="about-author">
-      &copy; 2013 <a href="http://thibaut.me" target="_blank">Thibaut Courouble</a> -
+      &#xA9; 2013 <a href="http://thibaut.me" target="_blank">Thibaut Courouble</a> -
       <a href="http://www.cssflow.com/mit-license" target="_blank">MIT License</a><br>
       Original PSD by <a href="http://www.premiumpixels.com/freebies/modal-box-contact-form-psd/" target="_blank">Orman Clark</a>
     </p>
   </section>
-</body>
-</html>
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

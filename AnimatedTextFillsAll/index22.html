@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-
-<head>
-    <meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>(Animated) Text Fills - Demo 22</title>
-    <meta name="description" content="How to Create (Animated) Text Fills with various techniques" />
-    <meta name="keywords" content="text, fill, animation, svg, background-clip, clip, mask" />
-    <meta name="author" content="Yoksel for Codrops" />
+    <meta name="description" content="How to Create (Animated) Text Fills with various techniques">
+    <meta name="keywords" content="text, fill, animation, svg, background-clip, clip, mask">
+    <meta name="author" content="Yoksel for Codrops">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/style22.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/style22.css">
     <!--[if IE]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -64,11 +61,11 @@
                     </symbol>
 
                     <!-- Mask with text -->
-                    <mask id="m-text" maskunits="userSpaceOnUse" maskcontentunits="userSpaceOnUse">
+                    <mask id="m-text" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
 
                         <rect width="100%" height="100%" class="mask__shape">
                         </rect>
-                        <use xlink:href="#s-text" class="mask__text"></use>
+                        <use href="#s-text" class="mask__text"/>
 
                     </mask>
                 </svg>
@@ -82,8 +79,8 @@
 
                     <!-- Visible SVG -->
                     <svg viewBox="0 0 600 300" class="svg-inverted-mask">
-                        <rect width="100%" height="100%" mask="url(#m-text)" class="shape--fill" />
-                        <use xlink:href="#s-text" class="text--transparent"></use>
+                        <rect width="100%" height="100%" mask="url(#m-text)" class="shape--fill"/>
+                        <use href="#s-text" class="text--transparent"/>
                     </svg>
                 </div>
             </div>
@@ -102,6 +99,20 @@
         </section>
     </div>
     <!-- /container -->
-</body>
 
-</html>
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

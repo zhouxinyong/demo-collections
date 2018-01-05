@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-
-<head>
-    <meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>(Animated) Text Fills - Demo 15</title>
-    <meta name="description" content="How to Create (Animated) Text Fills with various techniques" />
-    <meta name="keywords" content="text, fill, animation, svg, background-clip, clip, mask" />
-    <meta name="author" content="Yoksel for Codrops" />
+    <meta name="description" content="How to Create (Animated) Text Fills with various techniques">
+    <meta name="keywords" content="text, fill, animation, svg, background-clip, clip, mask">
+    <meta name="author" content="Yoksel for Codrops">
     <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/style15.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/style15.css">
     <!--[if IE]>
   		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -63,42 +60,42 @@
                 </symbol>
 
                 <!-- Clippath with text -->
-                <clippath id="cp-text">
+                <clipPath id="cp-text">
                     <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text--line">
                         Text
                     </text>
-                </clippath>
+                </clipPath>
 
                 <!-- Pattern -->
                 <pattern id="p-circles" width="40" height="40" viewBox="0 0 40 40" patternUnits="userSpaceOnUse">
 
-                    <circle r="12" cx="20" cy="20" class="c-ring"></circle>
-                    <circle r="5" cx="20" cy="20" class="c-ring"></circle>
+                    <circle r="12" cx="20" cy="20" class="c-ring"/>
+                    <circle r="5" cx="20" cy="20" class="c-ring"/>
 
-                    <circle r="12" cx="0" cy="0" class="c-ring"></circle>
-                    <circle r="12" cx="40" cy="0" class="c-ring"></circle>
-                    <circle r="12" cx="40" cy="40" class="c-ring"></circle>
-                    <circle r="12" cx="0" cy="40" class="c-ring"></circle>
+                    <circle r="12" cx="0" cy="0" class="c-ring"/>
+                    <circle r="12" cx="40" cy="0" class="c-ring"/>
+                    <circle r="12" cx="40" cy="40" class="c-ring"/>
+                    <circle r="12" cx="0" cy="40" class="c-ring"/>
 
-                    <circle r="5" cx="0" cy="0" class="c-ring"></circle>
-                    <circle r="5" cx="40" cy="0" class="c-ring"></circle>
-                    <circle r="5" cx="40" cy="40" class="c-ring"></circle>
-                    <circle r="5" cx="0" cy="40" class="c-ring"></circle>
+                    <circle r="5" cx="0" cy="0" class="c-ring"/>
+                    <circle r="5" cx="40" cy="0" class="c-ring"/>
+                    <circle r="5" cx="40" cy="40" class="c-ring"/>
+                    <circle r="5" cx="0" cy="40" class="c-ring"/>
 
                 </pattern>
 
 
                 <!-- Copy of text for shadow -->
-                <use xlink:href="#s-text" class="text-copy--shadow"></use>
+                <use href="#s-text" class="text-copy--shadow"/>
 
                 <!-- Group with clippath and with patterned content -->
                 <g clip-path="url(#cp-text)">
 
-                    <circle r="70%" cx="300" cy="150" class="shape-fill"></circle>
+                    <circle r="70%" cx="300" cy="150" class="shape-fill"/>
                 </g>
 
                 <!-- Copy of text for stroke -->
-                <use xlink:href="#s-text" class="text-copy--stroke"></use>
+                <use href="#s-text" class="text-copy--stroke"/>
 
             </svg>
         </div>
@@ -116,6 +113,20 @@
         </section>
     </div>
     <!-- /container -->
-</body>
 
-</html>
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

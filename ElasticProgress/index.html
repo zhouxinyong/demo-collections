@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 		<title>Elastic Progress | Codrops</title>
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<meta name="author" content="Codrops" />
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Codrops">
 		<link rel="shortcut icon" href="favicon.ico">
-		<link href='//fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link href="//fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+		<link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<!--[if IE]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -27,7 +25,7 @@
 					<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Tutorials/VideoOpeningAnimation/" title="Previous Demo"><span>Previous Demo</span></a>
 					<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=25030" title="Back to the article"><span>Back to the Codrops article</span></a>
 				</div>
-				<h1>Elastic Progress <span>Based on the <a href="//dribbble.com/shots/1887815-Download">Dribbble shot 'Download'</a> by <a href="//dribbble.com/xjw">xjw</a></span></h1>
+				<h1>Elastic Progress <span>Based on the <a href="//dribbble.com/shots/1887815-Download">Dribbble shot &apos;Download&apos;</a> by <a href="//dribbble.com/xjw">xjw</a></span></h1>
 			</header>
 			<div class="content">
 				<div class="row">
@@ -38,21 +36,21 @@
 						<pre><code>
 element.ElasticProgress({
 	buttonSize: 60,
-	fontFamily: "Montserrat",
-	colorBg: "#adeca8",
-	colorFg: "#7cc576",
+	fontFamily: &quot;Montserrat&quot;,
+	colorBg: &quot;#adeca8&quot;,
+	colorFg: &quot;#7cc576&quot;,
 	onClick: function(event) {
-	console.log("onClick");
-	$(this).ElasticProgress("open");
+	console.log(&quot;onClick&quot;);
+	$(this).ElasticProgress(&quot;open&quot;);
 },
 onOpen: function(event) {
 	fakeLoading($(this));
 },
 onFail: function(event) {
-	$(this).ElasticProgress("open");
+	$(this).ElasticProgress(&quot;open&quot;);
 },
 onCancel: function(event) {
-	$(this).ElasticProgress("open");
+	$(this).ElasticProgress(&quot;open&quot;);
 }
 });
 						</code></pre>
@@ -65,27 +63,27 @@ onCancel: function(event) {
 					<div class="box">
 						<pre><code>
 element.ElasticProgress({
-	align: "center",
-	fontFamily: "Roboto",
-	colorFg: "#77c2ff",
-	colorBg: "#4e80dd",
+	align: &quot;center&quot;,
+	fontFamily: &quot;Roboto&quot;,
+	colorFg: &quot;#77c2ff&quot;,
+	colorBg: &quot;#4e80dd&quot;,
 	bleedTop: 110,
 	bleedBottom: 40,
 	buttonSize: 100,
 	labelTilt: 70,
-	arrowDirection: "up",
+	arrowDirection: &quot;up&quot;,
 	onClick: function() {
-		$(this).ElasticProgress("open");
+		$(this).ElasticProgress(&quot;open&quot;);
 	},
 	onOpen: function() {
 		fakeLoading($(this))
 	},
 	onCancel: function() {
-		$(this).ElasticProgress("close");
+		$(this).ElasticProgress(&quot;close&quot;);
 	},
 	onComplete: function() {
 		var $obj = $(this)
-		$obj.ElasticProgress("close");
+		$obj.ElasticProgress(&quot;close&quot;);
 	}
 });
 						</code></pre>
@@ -98,10 +96,10 @@ element.ElasticProgress({
 					<div class="box">
 						<pre><code>
 element.ElasticProgress({
-	align: "center",
-	colorFg: "#686e85",
-	colorBg: "#b4bad2",
-	highlightColor: "#ffab91",
+	align: &quot;center&quot;,
+	colorFg: &quot;#686e85&quot;,
+	colorBg: &quot;#b4bad2&quot;,
+	highlightColor: &quot;#ffab91&quot;,
 	width: Math.min($(window).width()/2 - 100, 600),
 	barHeight: 10,
 	labelHeight: 50,
@@ -109,16 +107,16 @@ element.ElasticProgress({
 	bleedTop: 120,
 	bleedRight: 100,
 	buttonSize: 60,
-	fontFamily: "Arvo",
+	fontFamily: &quot;Arvo&quot;,
 	barStretch: 0,
 	barInset: 4,
 	barElasticOvershoot: 1,
 	barElasticPeriod: 0.6,
-	textFail: "Download Failed",
-	textComplete: "Download Complete",
+	textFail: &quot;Download Failed&quot;,
+	textComplete: &quot;Download Complete&quot;,
 	arrowHangOnFail: false,
 	onClick: function() {
-			$(this).ElasticProgress("open");
+			$(this).ElasticProgress(&quot;open&quot;);
 	},
 	onOpen: function() {
 			fakeLoading($(this))
@@ -127,7 +125,7 @@ element.ElasticProgress({
 			var $obj = $(this)
 
 			TweenMax.delayedCall(1.5, function() {
-					$obj.ElasticProgress("close");
+					$obj.ElasticProgress(&quot;close&quot;);
 			})
 	}
 });
@@ -140,13 +138,13 @@ element.ElasticProgress({
 					</div>
 					<div class="box">
 						<pre><code>
-var e = new ElasticProgress(document.querySelectorAll('.Download')[3], {
-	colorFg: "#ed7499",
-	colorBg: "#635c73",
-	highlightColor: "#ed7499",
+var e = new ElasticProgress(document.querySelectorAll(&apos;.Download&apos;)[3], {
+	colorFg: &quot;#ed7499&quot;,
+	colorBg: &quot;#635c73&quot;,
+	highlightColor: &quot;#ed7499&quot;,
 	barHeight: 14,
 	barInset: 10,
-	fontFamily: "Indie Flower"
+	fontFamily: &quot;Indie Flower&quot;
 });
 e.onClick(function() {
 	e.open();
@@ -177,5 +175,19 @@ e.onFail(function() {
 		<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
 		<script src="js/elastic-progress.min.js"></script>
 		<script src="js/main.js"></script>
-	</body>
-</html>
+	
+
+</div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Circle Ripple</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css">
     <!--[if IE]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -16,7 +14,7 @@
   <body>
     <!-- SVG Sprite -->
     <div style="height: 0; width: 0; position: absolute; visibility: hidden;" aria-hidden="true">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" focusable="false">
         <symbol id="ripply-scott" viewBox="0 0 100 100">
           <circle id="ripple-shape" cx="1" cy="1" r="1"/>
         </symbol>
@@ -40,7 +38,7 @@
       <button id="js-ripple-btn" class="button styl-material">
         Click for Ripple
         <svg class="ripple-obj" id="js-ripple">
-          <use height="100" width="100" xlink:href="#ripply-scott" class="js-ripple"></use>
+          <use height="100" width="100" href="#ripply-scott" class="js-ripple"/>
         </svg>
       </button>
       <!-- /end button component -->
@@ -51,5 +49,19 @@
     <!-- GreenSock Power : Required for Demo -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
     <script src="js/ripple-config.js"></script>
-  </body>
-</html>
+  
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

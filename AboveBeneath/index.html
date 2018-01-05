@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Above &amp; Beneath: Featured Content Layout Effect | Demo 1 | Codrops</title>
-		<meta name="description" content="A landing page template with a featured content section and background sounds that change according to the view" />
-		<meta name="keywords" content="landing page, background sound, aquatic theme, effect, transition, animation" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link href="//fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/style1.css" />
-		<!--[if IE]>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Above &amp; Beneath: Featured Content Layout Effect | Demo 1 | Codrops</title>
+  <meta name="description" content="A landing page template with a featured content section and background sounds that change according to the view" />
+  <meta name="keywords" content="landing page, background sound, aquatic theme, effect, transition, animation" />
+  <meta name="author" content="Codrops" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="//fonts.googleapis.com/css?family=Vidaloka" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style1.css" />
+  <!--[if IE]>
   		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<script>document.documentElement.className = 'js';</script>
-	</head>
-	<body>
-		<svg class="hidden">
+  <script>
+    document.documentElement.className = 'js';
+  </script>
+</head>
+
+<body>
+  <svg class="hidden">
 			<defs>
 				<symbol id="icon-arrow" viewBox="0 0 24 24">
 					<title>arrow</title>
@@ -67,95 +71,113 @@
 				</symbol>
 			</defs>
 		</svg>
-		<main class="landing-layout">
-			<!-- Landing wrap with sections -->
-			<div class="landing-wrap">
-				<section class="landing landing--above" style="background-image: url(img/1.jpg);"></section>
-				<section class="landing landing--beneath" style="background-image: url(img/2.jpg);">
-					<canvas id="bubbles"></canvas>
-				</section>
-			</div><!-- /landing-wrap -->
-			<!-- Landing header with title -->
-			<header class="landing-header">
-				<h1 class="landing-header__title" aria-label="Seaweed">
-					<span>S</span><span>e</span><span>a</span><span>w</span><span>e</span><span>e</span><span>d</span>
-				</h1>
-				<p class="landing-header__tagline">Super-nutritious ocean plants</p>
-			</header><!-- /landing-header -->
-			<!-- Trigger button for layout change -->
-			<button class="button button--trigger" aria-label="View more">
+  <main class="landing-layout">
+    <!-- Landing wrap with sections -->
+    <div class="landing-wrap">
+      <section class="landing landing--above" style="background-image: url(img/1.jpg);"></section>
+      <section class="landing landing--beneath" style="background-image: url(img/2.jpg);">
+        <canvas id="bubbles"></canvas>
+      </section>
+    </div>
+    <!-- /landing-wrap -->
+    <!-- Landing header with title -->
+    <header class="landing-header">
+      <h1 class="landing-header__title" aria-label="Seaweed">
+        <span>S</span><span>e</span><span>a</span><span>w</span><span>e</span><span>e</span><span>d</span>
+      </h1>
+      <p class="landing-header__tagline">Super-nutritious ocean plants</p>
+    </header>
+    <!-- /landing-header -->
+    <!-- Trigger button for layout change -->
+    <button class="button button--trigger" aria-label="View more">
 				<svg class="icon icon--grid icon--shown"><use xlink:href="#icon-grid"></use></svg>
 				<svg class="icon icon--arrow-up icon--hidden"><use xlink:href="#icon-arrow"></use></svg>
 			</button>
-			<!-- Sound on/off button -->
-			<button class="button button--sound" aria-label="Toggle sound">
+    <!-- Sound on/off button -->
+    <button class="button button--sound" aria-label="Toggle sound">
 				<svg class="icon icon--sound-on icon--shown"><use xlink:href="#icon-sound-on"></use></svg>
 				<svg class="icon icon--sound-off icon--hidden"><use xlink:href="#icon-sound-off"></use></svg>
 			</button>
-			<!-- Featured content that gets shown after the layout opens -->
-			<section class="featured-content">
-				<ul class="featured-list">
-					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw1.svg" alt="Seaweed 1">
-							<h3 class="featured-list__title">Green Glory</h3>
-						</a>
-					</li>
-					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw2.svg" alt="Seaweed 2">
-							<h3 class="featured-list__title">Mystic Crunch</h3>
-						</a>
-					</li>
-					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw3.svg" alt="Seaweed 3">
-							<h3 class="featured-list__title">Fine Jelly</h3>
-						</a>
-					</li>
-					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw4.svg" alt="Seaweed 4">
-							<h3 class="featured-list__title">Nutri Bomb</h3>
-						</a>
-					</li>
-					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw5.svg" alt="Seaweed 5">
-							<h3 class="featured-list__title">Holy Water</h3>
-						</a>
-					</li>
-					<li class="featured-list__item">
-						<a href="#" class="featured-list__link">
-							<img class="featured-list__img" src="img/icons/sw6.svg" alt="Seaweed 6">
-							<h3 class="featured-list__title">Juicy Magic</h3>
-						</a>
-					</li>
-				</ul>
-			</section><!-- /featured-content -->
-			<!-- Codrops header -->
-			<header class="codrops-header">
-				<div class="codrops-links">
-					<a class="codrops-icon codrops-icon--prev" href="" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
-					<a class="codrops-icon codrops-icon--drop" href="" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
-				</div>
-				<h1 class="codrops-header__title">Featured Content Layout Effect</h1>
-				<nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Demo 1</a>
-					<a href="index2.html">Demo 2</a>
-					<a href="index3.html">Demo 3</a>
-				</nav>
-			</header><!-- /codrops-header -->
-			<div class="loader">
-				<svg class="loader__img" viewBox="0 0 100 100" width="100px" height="100px">
+    <!-- Featured content that gets shown after the layout opens -->
+    <section class="featured-content">
+      <ul class="featured-list">
+        <li class="featured-list__item">
+          <a href="#" class="featured-list__link">
+            <img class="featured-list__img" src="img/icons/sw1.svg" alt="Seaweed 1">
+            <h3 class="featured-list__title">Green Glory</h3>
+          </a>
+        </li>
+        <li class="featured-list__item">
+          <a href="#" class="featured-list__link">
+            <img class="featured-list__img" src="img/icons/sw2.svg" alt="Seaweed 2">
+            <h3 class="featured-list__title">Mystic Crunch</h3>
+          </a>
+        </li>
+        <li class="featured-list__item">
+          <a href="#" class="featured-list__link">
+            <img class="featured-list__img" src="img/icons/sw3.svg" alt="Seaweed 3">
+            <h3 class="featured-list__title">Fine Jelly</h3>
+          </a>
+        </li>
+        <li class="featured-list__item">
+          <a href="#" class="featured-list__link">
+            <img class="featured-list__img" src="img/icons/sw4.svg" alt="Seaweed 4">
+            <h3 class="featured-list__title">Nutri Bomb</h3>
+          </a>
+        </li>
+        <li class="featured-list__item">
+          <a href="#" class="featured-list__link">
+            <img class="featured-list__img" src="img/icons/sw5.svg" alt="Seaweed 5">
+            <h3 class="featured-list__title">Holy Water</h3>
+          </a>
+        </li>
+        <li class="featured-list__item">
+          <a href="#" class="featured-list__link">
+            <img class="featured-list__img" src="img/icons/sw6.svg" alt="Seaweed 6">
+            <h3 class="featured-list__title">Juicy Magic</h3>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /featured-content -->
+    <!-- Codrops header -->
+    <header class="codrops-header">
+      <div class="codrops-links">
+        <a class="codrops-icon codrops-icon--prev" href="" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+        <a class="codrops-icon codrops-icon--drop" href="" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+      </div>
+      <h1 class="codrops-header__title">Featured Content Layout Effect</h1>
+      <nav class="codrops-demos">
+        <a class="current-demo" href="index.html">Demo 1</a>
+        <a href="index2.html">Demo 2</a>
+        <a href="index3.html">Demo 3</a>
+      </nav>
+    </header>
+    <!-- /codrops-header -->
+    <div class="loader">
+      <svg class="loader__img" viewBox="0 0 100 100" width="100px" height="100px">
 					<circle class="loader__circle" cx="22.8" cy="77.6" r="16.5"/>
 					<circle class="loader__circle" cx="52.2" cy="82.9" r="6.5"/>
 					<circle class="loader__circle" cx="79.8" cy="69.8" r="13.1"/>
 				</svg>
-			</div>
-		</main>
-		<script src="js/howler.min.js"></script>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+    </div>
+  </main>
+  <script src="js/howler.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+
+</body>
+
 </html>

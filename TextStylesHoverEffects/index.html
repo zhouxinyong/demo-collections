@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-
-<head>
-	<meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Inspiration for Text Styles and Hover Effects</title>
-	<meta name="description" content="A set of modern text styles and hover effects for your inspiration" />
-	<meta name="keywords" content="text style, link style, link hover, effect, animation, inspiration, web design" />
-	<meta name="author" content="Codrops" />
+	<meta name="description" content="A set of modern text styles and hover effects for your inspiration">
+	<meta name="keywords" content="text style, link style, link hover, effect, animation, inspiration, web design">
+	<meta name="author" content="Codrops">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/linkstyles.css" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<link rel="stylesheet" type="text/css" href="css/linkstyles.css">
 	<!--[if IE]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -33,12 +30,12 @@
 	<!-- clipping mask for style "Urpi" -->
 	<svg class="hidden" viewBox="0 0 310 160">
 		<defs>
-			<clippath id="cp_up">
-				<polygon id="cp_poly_up" points="0,0 310,0 310,160" />
-			</clippath>
-			<clippath id="cp_down">
-				<polygon id="cp_poly_down" points="0,0 0,160 310,160" />
-			</clippath>
+			<clipPath id="cp_up">
+				<polygon id="cp_poly_up" points="0,0 310,0 310,160"/>
+			</clipPath>
+			<clipPath id="cp_down">
+				<polygon id="cp_poly_down" points="0,0 0,160 310,160"/>
+			</clipPath>
 		</defs>
 	</svg>
 	<!-- SVG for effect "Asiri" -->
@@ -49,10 +46,10 @@
 			<text text-anchor="middle" x="50%" y="50%" dy="0.35em" textLength="280" class="text--asiri">Asiri</text>
 		</symbol>
 		<!-- Mask with text -->
-		<mask id="m-text" maskunits="userSpaceOnUse" maskcontentunits="userSpaceOnUse">
+		<mask id="m-text" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
 			<rect width="100%" height="100%" class="mask__shape">
 			</rect>
-			<use xlink:href="#s-text" class="mask__text"></use>
+			<use href="#s-text" class="mask__text"/>
 		</mask>
 	</svg>
 	<div class="container">
@@ -108,10 +105,10 @@
 					<!-- SVG to cover text fill -->
 					<svg viewBox="0 0 400 200" class="svg-inverted-mask">
 						<!-- Big shape with hole in form of text -->
-						<rect width="100%" height="100%" mask="url(#m-text)" class="shape--fill" />
+						<rect width="100%" height="100%" mask="url(#m-text)" class="shape--fill"/>
 						<!-- Transparent copy of text to keep
 							 patterned text selectable -->
-						<use xlink:href="#s-text" class="text--transparent"></use>
+						<use href="#s-text" class="text--transparent"/>
 					</svg>
 				</a>
 			</div>
@@ -230,6 +227,20 @@
 			el.onclick = function() { return false; }
 		} );
 	</script>
-</body>
 
-</html>
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

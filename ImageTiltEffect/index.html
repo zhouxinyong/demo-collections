@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Image Tilt Effect</title>
-		<meta name="description" content="A script for creating a tilt effect on an image that follows mouse movement" />
-		<meta name="keywords" content="tilt, image, effect, web design, mouse, movement" />
-		<meta name="author" content="Codrops" />
+		<meta name="description" content="A script for creating a tilt effect on an image that follows mouse movement">
+		<meta name="keywords" content="tilt, image, effect, web design, mouse, movement">
+		<meta name="author" content="Codrops">
 		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/tilteffect.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/tilteffect.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
 		<!--[if IE]>
   		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -27,7 +25,7 @@
 				<a class="github-link" href="//github.com/codrops/ImageTiltEffect/"><i class="fa fa-github"></i><span>View on GitHub</span></a>
 				<div class="hero">
 					<div class="hero__imgwrap">
-						<img class="hero__img tilt-effect" data-tilt-options='{ "opacity" : 0.6, "movement": { "perspective" : 1500, "translateX" : 10, "translateY" : 10, "translateZ" : 2, "rotateX" : 3, "rotateY" : 3 } }' src="img/1.jpg" alt="Hero image" />
+						<img class="hero__img tilt-effect" data-tilt-options="{ &quot;opacity&quot; : 0.6, &quot;movement&quot;: { &quot;perspective&quot; : 1500, &quot;translateX&quot; : 10, &quot;translateY&quot; : 10, &quot;translateZ&quot; : 2, &quot;rotateX&quot; : 3, &quot;rotateY&quot; : 3 } }" src="img/1.jpg" alt="Hero image">
 					</div>
 					<h1><span>A subtle tilt effect for your images</span> Image Tilt Effect</h1>
 					<div class="mobile-note">This effect currently only works on hover. Please switch to a desktop browser in order to see the effect.</div>
@@ -40,60 +38,60 @@
 				<ul class="grid grid--xray">
 					<li class="grid__item">
 						<div class="grid__img grid__img--border">
-							<img src="img/2.jpg" class="tilt-effect" alt="grid01" />
+							<img src="img/2.jpg" class="tilt-effect" alt="grid01">
 						</div>
 						<div class="grid__item-title">
 						Default options:
-<pre><code>"extraImgs" : 2,
-"opacity" : 0.7,
-"bgfixed" : true,
-"movement": { 
-	"perspective" : 1000, 
-	"translateX" : -10, 
-	"translateY" : -10, 
-	"translateZ" : 20, 
-	"rotateX" : 2, 
-	"rotateY" : 2,
-	"rotateZ" : 2 
+<pre><code>&quot;extraImgs&quot; : 2,
+&quot;opacity&quot; : 0.7,
+&quot;bgfixed&quot; : true,
+&quot;movement&quot;: { 
+	&quot;perspective&quot; : 1000, 
+	&quot;translateX&quot; : -10, 
+	&quot;translateY&quot; : -10, 
+	&quot;translateZ&quot; : 20, 
+	&quot;rotateX&quot; : 2, 
+	&quot;rotateY&quot; : 2,
+	&quot;rotateZ&quot; : 2 
 }</code></pre>
 						</div>
 					</li>
 					<li class="grid__item">
 						<div class="grid__img grid__img--border">
-							<img src="img/2.jpg" class="tilt-effect" data-tilt-options='{ "extraImgs" : 4, "opacity" : 0.5, "movement": { "perspective" : 500, "translateX" : -15, "translateY" : -15, "translateZ" : 20, "rotateX" : 15, "rotateY" : 15 } }' alt="grid01" />
+							<img src="img/2.jpg" class="tilt-effect" data-tilt-options="{ &quot;extraImgs&quot; : 4, &quot;opacity&quot; : 0.5, &quot;movement&quot;: { &quot;perspective&quot; : 500, &quot;translateX&quot; : -15, &quot;translateY&quot; : -15, &quot;translateZ&quot; : 20, &quot;rotateX&quot; : 15, &quot;rotateY&quot; : 15 } }" alt="grid01">
 						</div>
 						<div class="grid__item-title">
 						Options:
-<pre><code>"extraImgs" : 4,
-"opacity" : 0.5,
-"bgfixed" : true,
-"movement": { 
-	"perspective" : 500, 
-	"translateX" : -15, 
-	"translateY" : -15, 
-	"translateZ" : 20, 
-	"rotateX" : 15, 
-	"rotateY" : 15 
+<pre><code>&quot;extraImgs&quot; : 4,
+&quot;opacity&quot; : 0.5,
+&quot;bgfixed&quot; : true,
+&quot;movement&quot;: { 
+	&quot;perspective&quot; : 500, 
+	&quot;translateX&quot; : -15, 
+	&quot;translateY&quot; : -15, 
+	&quot;translateZ&quot; : 20, 
+	&quot;rotateX&quot; : 15, 
+	&quot;rotateY&quot; : 15 
 }</code></pre>
 						</div>
 					</li>
 					<li class="grid__item">
 						<div class="grid__img grid__img--border">
-							<img src="img/2.jpg" class="tilt-effect" data-tilt-options='{ "bgfixed" : false, "movement": { "perspective" : 1000, "translateX" : 30, "translateY" : 30, "translateZ" : -50, "rotateX" : 3, "rotateY" : 3, "rotateZ" : 10 } }' alt="grid01" />
+							<img src="img/2.jpg" class="tilt-effect" data-tilt-options="{ &quot;bgfixed&quot; : false, &quot;movement&quot;: { &quot;perspective&quot; : 1000, &quot;translateX&quot; : 30, &quot;translateY&quot; : 30, &quot;translateZ&quot; : -50, &quot;rotateX&quot; : 3, &quot;rotateY&quot; : 3, &quot;rotateZ&quot; : 10 } }" alt="grid01">
 						</div>
 						<div class="grid__item-title">
 						Options:
-<pre><code>"extraImgs" : 2,
-"opacity" : 0.7,
-"bgfixed" : false,
-"movement": { 
-	"perspective" : 1000, 
-	"translateX" : 30, 
-	"translateY" : 30, 
-	"translateZ" : -50, 
-	"rotateX" : 0, 
-	"rotateY" : 0,
-	"rotateZ" : 10, 
+<pre><code>&quot;extraImgs&quot; : 2,
+&quot;opacity&quot; : 0.7,
+&quot;bgfixed&quot; : false,
+&quot;movement&quot;: { 
+	&quot;perspective&quot; : 1000, 
+	&quot;translateX&quot; : 30, 
+	&quot;translateY&quot; : 30, 
+	&quot;translateZ&quot; : -50, 
+	&quot;rotateX&quot; : 0, 
+	&quot;rotateY&quot; : 0,
+	&quot;rotateZ&quot; : 10, 
 }</code></pre>
 						</div>
 					</li>
@@ -115,7 +113,7 @@
 					</dd>
 					<dt><strong>bgfixed</strong></dt>
 					<dd>
-						<p>Movement of first layer; by default it's not moving</p>
+						<p>Movement of first layer; by default it&apos;s not moving</p>
 						<p><code>bgfixed : true</code></p>
 					</dd>
 					<dt><strong>movement</strong></dt>
@@ -161,30 +159,30 @@
 						</dl>
 					</dd>
 				</dl>
-				<p>Add the class "tilt-effect" to the respective image. The image container should have an explicit width and height.</p>
-				<p>To initialize either set the options in "data-tilt-options" or initialize with JavaScript: <code>new TiltFx(element, options)</code></p>
+				<p>Add the class &quot;tilt-effect&quot; to the respective image. The image container should have an explicit width and height.</p>
+				<p>To initialize either set the options in &quot;data-tilt-options&quot; or initialize with JavaScript: <code>new TiltFx(element, options)</code></p>
 			</div>
 			<div class="content">
 				<h2 class="poster-headline">Examples</h2>
 				<ul class="grid grid--examples">
 					<li class="grid__item">
-						<div class="grid__img grid__img--example-1" >
-							<img src="img/3.jpg" class="tilt-effect" alt="grid01" data-tilt-options='{ "opacity" : 0.3, "extraImgs" : 3, "movement": { "perspective" : 1200, "translateX" : -5, "translateY" : -5, "rotateX" : -5, "rotateY" : -5 } }' />
+						<div class="grid__img grid__img--example-1">
+							<img src="img/3.jpg" class="tilt-effect" alt="grid01" data-tilt-options="{ &quot;opacity&quot; : 0.3, &quot;extraImgs&quot; : 3, &quot;movement&quot;: { &quot;perspective&quot; : 1200, &quot;translateX&quot; : -5, &quot;translateY&quot; : -5, &quot;rotateX&quot; : -5, &quot;rotateY&quot; : -5 } }">
 						</div>
 					</li>
 					<li class="grid__item">
 						<div class="grid__img grid__img--example-2">
-							<img src="img/4.jpg" class="tilt-effect" alt="grid02"  data-tilt-options='{ "movement": { "perspective" : 700, "translateX" : -15, "translateY" : -15, "translateZ" : 10, "rotateX" : 2, "rotateY" : 10 } }' />
+							<img src="img/4.jpg" class="tilt-effect" alt="grid02" data-tilt-options="{ &quot;movement&quot;: { &quot;perspective&quot; : 700, &quot;translateX&quot; : -15, &quot;translateY&quot; : -15, &quot;translateZ&quot; : 10, &quot;rotateX&quot; : 2, &quot;rotateY&quot; : 10 } }">
 						</div>
 					</li>
 					<li class="grid__item">
 						<div class="grid__img grid__img--example-3">
-							<img src="img/5.jpg" class="tilt-effect" alt="grid03"  data-tilt-options='{ "opacity" : 0.6, "extraImgs" : 4, "movement": { "perspective" : 500, "translateX" : 15, "translateY" : 0, "translateZ" : 10, "rotateX" : 3, "rotateY" : 4, "rotateZ" : 1 } }' />
+							<img src="img/5.jpg" class="tilt-effect" alt="grid03" data-tilt-options="{ &quot;opacity&quot; : 0.6, &quot;extraImgs&quot; : 4, &quot;movement&quot;: { &quot;perspective&quot; : 500, &quot;translateX&quot; : 15, &quot;translateY&quot; : 0, &quot;translateZ&quot; : 10, &quot;rotateX&quot; : 3, &quot;rotateY&quot; : 4, &quot;rotateZ&quot; : 1 } }">
 						</div>
 					</li>
 					<li class="grid__item">
 						<div class="grid__img grid__img--example-4">
-							<img src="img/6.jpg" class="tilt-effect" alt="grid04"  data-tilt-options='{ "opacity" : 0.8, "bgfixed" : false, "extraImgs" : 3, "movement": { "perspective" : 1500, "translateX" : 80, "translateY" : 80, "translateZ" : 0, "rotateY" : 20 } }' />
+							<img src="img/6.jpg" class="tilt-effect" alt="grid04" data-tilt-options="{ &quot;opacity&quot; : 0.8, &quot;bgfixed&quot; : false, &quot;extraImgs&quot; : 3, &quot;movement&quot;: { &quot;perspective&quot; : 1500, &quot;translateX&quot; : 80, &quot;translateY&quot; : 80, &quot;translateZ&quot; : 0, &quot;rotateY&quot; : 20 } }">
 						</div>
 					</li>
 				</ul>
@@ -209,5 +207,19 @@
 			</section>
 		</div><!-- /container -->
 		<script src="js/tiltfx.js"></script>
-	</body>
-</html>
+	
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

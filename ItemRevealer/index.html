@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Item Revealer | Demo 1 | Codrops</title>
-		<meta name="description" content="Revealing and unrevealing items with animated SVG paths using anime.js" />
-		<meta name="keywords" content="cover, reveal, grid, svg, animated, path, mask, image" />
-		<meta name="author" content="Codrops" />
+		<meta name="description" content="Revealing and unrevealing items with animated SVG paths using anime.js">
+		<meta name="keywords" content="cover, reveal, grid, svg, animated, path, mask, image">
+		<meta name="author" content="Codrops">
 		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css">
 		<!--[if IE]>
   		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -21,20 +19,20 @@
 			<defs>
 				<symbol id="icon-arrow" viewBox="0 0 32 32">
 					<title>arrow</title>
-					<path class="path1" d="M7.333 24c-0.133 0-0.4 0-0.533-0.133l-6.667-6.667c0 0-0.133-0.133-0.133-0.267s0-0.133 0-0.267c0 0 0 0 0 0 0-0.133 0-0.133 0-0.267s0.133-0.133 0.133-0.267l6.667-6.667c0.4-0.133 0.8-0.133 1.067 0s0.267 0.667 0 0.933l-5.6 5.6h29.067c0.4 0 0.667 0.267 0.667 0.667s-0.267 0.667-0.667 0.667h-29.067l5.467 5.467c0.267 0.267 0.267 0.667 0 0.933 0 0.267-0.267 0.267-0.4 0.267z"></path>
+					<path class="path1" d="M7.333 24c-0.133 0-0.4 0-0.533-0.133l-6.667-6.667c0 0-0.133-0.133-0.133-0.267s0-0.133 0-0.267c0 0 0 0 0 0 0-0.133 0-0.133 0-0.267s0.133-0.133 0.133-0.267l6.667-6.667c0.4-0.133 0.8-0.133 1.067 0s0.267 0.667 0 0.933l-5.6 5.6h29.067c0.4 0 0.667 0.267 0.667 0.667s-0.267 0.667-0.667 0.667h-29.067l5.467 5.467c0.267 0.267 0.267 0.667 0 0.933 0 0.267-0.267 0.267-0.4 0.267z"/>
 				</symbol>
 				<symbol id="icon-drop" viewBox="0 0 32 32">
 					<title>drop</title>
-					<path class="path1" d="M17.333 32c-5.867 0-10.667-4.8-10.667-10.667 0-5.6 9.733-20.4 10.133-21.067 0.267-0.4 0.8-0.4 1.067 0 0.4 0.667 10.133 15.467 10.133 21.067 0 5.867-4.8 10.667-10.667 10.667zM17.333 1.867c-2.133 3.333-9.333 14.933-9.333 19.467 0 5.2 4.133 9.333 9.333 9.333s9.333-4.133 9.333-9.333c0-4.533-7.2-16.133-9.333-19.467z"></path>
-					<path class="path2" d="M13.333 26.533c-0.133 0-0.267 0-0.4-0.133-1.467-1.333-2.267-3.2-2.267-5.067 0-1.6 1.2-4.533 3.467-8.933 0.133-0.4 0.533-0.533 0.933-0.267 0.267 0.133 0.4 0.533 0.267 0.933-2.133 4-3.333 6.933-3.333 8.267 0 1.467 0.667 2.933 1.733 4 0.267 0.267 0.267 0.667 0 0.933 0 0.133-0.267 0.267-0.4 0.267z"></path>
+					<path class="path1" d="M17.333 32c-5.867 0-10.667-4.8-10.667-10.667 0-5.6 9.733-20.4 10.133-21.067 0.267-0.4 0.8-0.4 1.067 0 0.4 0.667 10.133 15.467 10.133 21.067 0 5.867-4.8 10.667-10.667 10.667zM17.333 1.867c-2.133 3.333-9.333 14.933-9.333 19.467 0 5.2 4.133 9.333 9.333 9.333s9.333-4.133 9.333-9.333c0-4.533-7.2-16.133-9.333-19.467z"/>
+					<path class="path2" d="M13.333 26.533c-0.133 0-0.267 0-0.4-0.133-1.467-1.333-2.267-3.2-2.267-5.067 0-1.6 1.2-4.533 3.467-8.933 0.133-0.4 0.533-0.533 0.933-0.267 0.267 0.133 0.4 0.533 0.267 0.933-2.133 4-3.333 6.933-3.333 8.267 0 1.467 0.667 2.933 1.733 4 0.267 0.267 0.267 0.667 0 0.933 0 0.133-0.267 0.267-0.4 0.267z"/>
 				</symbol>
 				<!-- icons for grid -->
-				<symbol id="icon-nav" viewbox="0 0 129 129">
+				<symbol id="icon-nav" viewBox="0 0 129 129">
 					<title>nav</title>
 					<!-- by Lucy G http://www.flaticon.com/free-icon/down-arrow_118738 -->
 					<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
 				</symbol>
-				<symbol id="icon-cross" viewbox="0 0 129 129">
+				<symbol id="icon-cross" viewBox="0 0 129 129">
 					<title>cross</title>
 					<!-- by Lucy G http://www.flaticon.com/free-icon/cancel_118741 -->
 					<path d="M7.6,121.4c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2l51.1-51.1l51.1,51.1c0.8,0.8,1.8,1.2,2.9,1.2c1,0,2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8L70.3,64.5l51.1-51.1c1.6-1.6,1.6-4.2,0-5.8s-4.2-1.6-5.8,0L64.5,58.7L13.4,7.6C11.8,6,9.2,6,7.6,7.6s-1.6,4.2,0,5.8l51.1,51.1L7.6,115.6C6,117.2,6,119.8,7.6,121.4z"/>
@@ -48,8 +46,8 @@
 						<div class="grid__item grid__item--auto">
 							<header class="codrops-header">
 								<div class="codrops-links">
-									<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/RecordPlayer/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
-									<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=27324" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+									<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/RecordPlayer/" title="Previous Demo"><svg class="icon icon--arrow"><use href="#icon-arrow"/></svg></a>
+									<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=27324" title="Back to the article"><svg class="icon icon--drop"><use href="#icon-drop"/></svg></a>
 								</div>
 								<h1 class="codrops-header__title">Item Revealer</h1>
 								<nav class="codrops-demos">
@@ -79,7 +77,7 @@
 						<div class="grid__item grid__item--auto" data-delay="190">
 							<a class="pater" href="//goo.gl/rsgZTW">
 								<h2 class="pater__title" aria-label="PageCloud Web Editor"><img src="img/sponsor/PageCloud_logo.svg" alt="PageCloud Logo"></h2>
-								<p class="pater__desc">Take control of your website with features you won't find anywhere else. Find out why PageCloud is the world's most advanced website creator! &rarr;</p>
+								<p class="pater__desc">Take control of your website with features you won&apos;t find anywhere else. Find out why PageCloud is the world&apos;s most advanced website creator! &#x2192;</p>
 							</a>
 						</div>
 						<div class="grid__item" data-delay="250">
@@ -142,8 +140,8 @@
 					</div>
 				</div>
 				<nav class="grid-nav">
-					<button class="grid__button grid__button--prev" aria-label="Previous page"><svg class="icon icon--nav-up"><use xlink:href="#icon-nav"></use></svg></button>
-					<button class="grid__button grid__button--next" aria-label="Next page"><svg class="icon icon--nav-down"><use xlink:href="#icon-nav"></use></svg></button>
+					<button class="grid__button grid__button--prev" aria-label="Previous page"><svg class="icon icon--nav-up"><use href="#icon-nav"/></svg></button>
+					<button class="grid__button grid__button--next" aria-label="Next page"><svg class="icon icon--nav-down"><use href="#icon-nav"/></svg></button>
 				</nav>
 			</div><!-- /grid-pages -->
 		</main>
@@ -155,5 +153,19 @@
 			new GridSlideshow(document.querySelector('.grid-pages'));
 		})();
 		</script>
-	</body>
-</html>
+	
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

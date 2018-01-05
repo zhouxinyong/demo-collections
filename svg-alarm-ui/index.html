@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html >
-  <head>
+<!DOCTYPE html><html><head>
     <meta charset="UTF-8">
     <title>SVG Alarm UI</title>
     <script src="//use.typekit.net/rid3oni.js"></script>
@@ -33,7 +31,7 @@
 
  <line opacity="1" class="dottedLine" x1="50%" x2="50%" y1="369" y2="450" stroke-dasharray="6 6" stroke="#7e7e7e"/>
 
- <g class="maskedTimeScale" >
+ <g class="maskedTimeScale">
   
  <g class="timeScaleGroup"> 
 
@@ -41,17 +39,17 @@
   <g class="timeScaleMarkerGroup"/>
 
   <g class="alarmBell" opacity="0">
-  <use x="151" y="468" xlink:href="#bell" fill="#3498DB"/>
+  <use x="151" y="468" href="#bell" fill="#3498DB"/>
    </g>   
   </g>
 
   </g>
       <g class="clockGroup" stroke="#7e7e7e">
-        <circle cx="50%" cy="140" r="80" fill="none"  stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <circle cx="50%" cy="140" r="80" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
         <line class="minuteHand" stroke="#D6DADD" x1="50%" y1="140" x2="50%" y2="75" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
-        <line class="hourHand" stroke="#D6DADD" x1="50%" y1="140" x2="50%" y2="105" fill="none"  stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
-        <circle class="centerDot" cx="50%" cy="140" r="4" fill="#212121" stroke="#D6DADD"  stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
-        <circle class="clockDragger" cx="50%" cy="99" r="70" fill="transparent"  stroke-width="0"/>
+        <line class="hourHand" stroke="#D6DADD" x1="50%" y1="140" x2="50%" y2="105" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="5"/>
+        <circle class="centerDot" cx="50%" cy="140" r="4" fill="#212121" stroke="#D6DADD" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+        <circle class="clockDragger" cx="50%" cy="99" r="70" fill="transparent" stroke-width="0"/>
       </g>
  <text class="meridianLabel" x="50%" y="290">--</text>
  <clipPath id="bellBtnMask">
@@ -64,13 +62,27 @@
     <text class="bellBtnLabel" x="50%" y="348">SET ALARM</text>
   </g> 
 </svg>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
-<script src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/utils/Draggable.min.js'></script>
-<script src='//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/utils/Draggable.min.js"></script>
+<script src="//s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
 
         <script src="js/index.js"></script>
 
     
     
-  </body>
-</html>
+  
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>

@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Multi-Layout Slideshow | Demo 1 | Codrops</title>
-		<meta name="description" content="A simple slideshow component with individual slide layouts and effects" />
-		<meta name="keywords" content="slideshow, images, layout, asymmetric, css, html, javascript, template" />
-		<meta name="author" content="Codrops" />
+		<meta name="description" content="A simple slideshow component with individual slide layouts and effects">
+		<meta name="keywords" content="slideshow, images, layout, asymmetric, css, html, javascript, template">
+		<meta name="author" content="Codrops">
 		<link rel="shortcut icon" href="favicon.ico">
 		<link href="//fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/slideshow.css" />
-		<link rel="stylesheet" type="text/css" href="css/slideshow_layouts.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+		<link rel="stylesheet" type="text/css" href="css/slideshow.css">
+		<link rel="stylesheet" type="text/css" href="css/slideshow_layouts.css">
 		<!--[if IE]>
   		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   		<style>
@@ -43,19 +41,19 @@
 				</symbol>
 				<symbol id="icon-octicon" viewBox="0 0 24 24">
 					<title>octicon</title>
-					<path d="M12,2.2C6.4,2.2,1.9,6.7,1.9,12.2c0,4.4,2.9,8.2,6.9,9.6c0.5,0.1,0.7-0.2,0.7-0.5c0-0.2,0-0.9,0-1.7c-2.8,0.6-3.4-1.4-3.4-1.4C5.6,17.1,5,16.8,5,16.8C4.1,16.2,5,16.2,5,16.2c1,0.1,1.5,1,1.5,1c0.9,1.5,2.4,1.1,2.9,0.8c0.1-0.7,0.4-1.1,0.6-1.3c-2.2-0.3-4.6-1.1-4.6-5c0-1.1,0.4-2,1-2.7C6.5,8.8,6.2,7.7,6.7,6.4c0,0,0.8-0.3,2.8,1C10.3,7.2,11.1,7.1,12,7c0.9,0,1.7,0.1,2.5,0.3c1.9-1.3,2.8-1,2.8-1c0.5,1.4,0.2,2.4,0.1,2.7c0.6,0.7,1,1.6,1,2.7c0,3.9-2.4,4.7-4.6,5c0.4,0.3,0.7,0.9,0.7,1.9c0,1.3,0,2.4,0,2.8c0,0.3,0.2,0.6,0.7,0.5c4-1.3,6.9-5.1,6.9-9.6C22.1,6.7,17.6,2.2,12,2.2z" />
+					<path d="M12,2.2C6.4,2.2,1.9,6.7,1.9,12.2c0,4.4,2.9,8.2,6.9,9.6c0.5,0.1,0.7-0.2,0.7-0.5c0-0.2,0-0.9,0-1.7c-2.8,0.6-3.4-1.4-3.4-1.4C5.6,17.1,5,16.8,5,16.8C4.1,16.2,5,16.2,5,16.2c1,0.1,1.5,1,1.5,1c0.9,1.5,2.4,1.1,2.9,0.8c0.1-0.7,0.4-1.1,0.6-1.3c-2.2-0.3-4.6-1.1-4.6-5c0-1.1,0.4-2,1-2.7C6.5,8.8,6.2,7.7,6.7,6.4c0,0,0.8-0.3,2.8,1C10.3,7.2,11.1,7.1,12,7c0.9,0,1.7,0.1,2.5,0.3c1.9-1.3,2.8-1,2.8-1c0.5,1.4,0.2,2.4,0.1,2.7c0.6,0.7,1,1.6,1,2.7c0,3.9-2.4,4.7-4.6,5c0.4,0.3,0.7,0.9,0.7,1.9c0,1.3,0,2.4,0,2.8c0,0.3,0.2,0.6,0.7,0.5c4-1.3,6.9-5.1,6.9-9.6C22.1,6.7,17.6,2.2,12,2.2z"/>
 				</symbol>
 				<!-- From Karen Menezes: https://www.smashingmagazine.com/2015/05/creating-responsive-shapes-with-clip-path/ -->
 				<clipPath id="polygon-clip-rhomboid" clipPathUnits="objectBoundingBox">
-					<polygon points="0 1, 0.3 0, 1 0, 0.7 1" />
+					<polygon points="0 1, 0.3 0, 1 0, 0.7 1"/>
 				</clipPath>
 			</defs>
 		</svg>
 		<main>
 			<header class="codrops-header">
 				<div class="codrops-links">
-					<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/AboveBeneath/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
-					<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=27363" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+					<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/AboveBeneath/" title="Previous Demo"><svg class="icon icon--arrow"><use href="#icon-arrow"/></svg></a>
+					<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=27363" title="Back to the article"><svg class="icon icon--drop"><use href="#icon-drop"/></svg></a>
 				</div>
 				<h1 class="codrops-header__title">Multi-Layout Slideshow</h1>
 				<p class="codrops-header__tagline">A decorative slideshow with a different layout for each slide</p>
@@ -65,7 +63,7 @@
 					<a class="dummy-links__link" href="#">Stories</a>
 					<a class="dummy-links__link" href="#">Contact</a>
 				</nav>
-				<a href="//github.com/codrops/MultiLayoutSlideshow/" class="btn btn--github"><svg class="icon icon--octicon"><use xlink:href="#icon-octicon"></use></svg></a>
+				<a href="//github.com/codrops/MultiLayoutSlideshow/" class="btn btn--github"><svg class="icon icon--octicon"><use href="#icon-octicon"/></svg></a>
 			</header>
 			<div class="slideshow" tabindex="0">
 				<div class="slide slide--layout-1" data-layout="layout1">
@@ -89,7 +87,7 @@
 					</div>
 					<div class="slide__title">
 						<h3 class="slide__title-main">Crazy Breed</h3>
-						<p class="slide__title-sub">There's those thinking more or less less is more. But if less is more how you're keeping score?</p>
+						<p class="slide__title-sub">There&apos;s those thinking more or less less is more. But if less is more how you&apos;re keeping score?</p>
 					</div>
 				</div><!-- /slide -->
 				<div class="slide slide--layout-3" data-layout="layout3">
@@ -104,7 +102,7 @@
 					</div>
 					<div class="slide__title">
 						<h3 class="slide__title-main">Safe Harbor</h3>
-						<p class="slide__title-sub">Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do.</p>
+						<p class="slide__title-sub">Twenty years from now you will be more disappointed by the things you didn&#x2019;t do than by the ones you did do.</p>
 					</div>
 				</div><!-- /slide -->
 				<div class="slide slide--layout-4" data-layout="layout4">
@@ -116,7 +114,7 @@
 					</div>
 					<div class="slide__title">
 						<h3 class="slide__title-main">Our Freedom</h3>
-						<p class="slide__title-sub">For to be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others.</p>
+						<p class="slide__title-sub">For to be free is not merely to cast off one&apos;s chains, but to live in a way that respects and enhances the freedom of others.</p>
 					</div>
 				</div><!-- /slide -->
 				<div class="slide slide--layout-5" data-layout="layout5">
@@ -153,7 +151,7 @@
 					</div>
 					<div class="slide__title">
 						<h3 class="slide__title-main">Walk the Walk</h3>
-						<p class="slide__title-sub">The trouble with being in the rat race is that even if you win, you're still a rat.</p>
+						<p class="slide__title-sub">The trouble with being in the rat race is that even if you win, you&apos;re still a rat.</p>
 					</div>
 				</div><!-- /slide -->
 				<div class="slide slide--layout-7" data-layout="layout7">
@@ -168,8 +166,8 @@
 					</div>
 				</div><!-- /slide -->
 				<nav class="slideshow__nav slideshow__nav--arrows">
-					<button id="prev-slide" class="btn btn--arrow" aria-label="Previous slide"><svg class="icon icon--prev"><use xlink:href="#icon-prev"></use></svg></button>
-					<button id="next-slide" class="btn btn--arrow" aria-label="Next slide"><svg class="icon icon--next"><use xlink:href="#icon-next"></use></svg></button>
+					<button id="prev-slide" class="btn btn--arrow" aria-label="Previous slide"><svg class="icon icon--prev"><use href="#icon-prev"/></svg></button>
+					<button id="next-slide" class="btn btn--arrow" aria-label="Next slide"><svg class="icon icon--next"><use href="#icon-next"/></svg></button>
 				</nav>
 			</div><!-- /slideshow -->
 			<div class="content content--text">
@@ -221,5 +219,19 @@
 			});
 		})();
 		</script>
-	</body>
-</html>
+	
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112012191-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112012191-1');
+  </script>
+</body></html>
